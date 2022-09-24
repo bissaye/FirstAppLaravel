@@ -5,7 +5,7 @@ About
 @endsection
 
 @section('content')
-<img src="/images/bssy.jpg" alt="" srcset="">
+<img src="{{ asset('/images/bssy.jpg') }}" alt="" srcset="">
 <h3>
     Build with &hearts; by me FRANCK BISSAYE <br>
     An eternal code lover
