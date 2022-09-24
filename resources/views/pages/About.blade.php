@@ -10,7 +10,7 @@ About
     An eternal code lover
 </h3>
 <p>
-    <a href="/">return to home</a>
+    <a href="{{ route("app_home") }}">return to home</a>
 </p>
 @endsection
 

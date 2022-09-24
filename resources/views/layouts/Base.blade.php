@@ -10,7 +10,10 @@
         @yield('content')
         <footer>
             <p>
-                &copy; Copyright {{ date('Y') }} &middot; <a href="/about">about me</a>
+                &copy; Copyright {{ date('Y') }} 
+                @if(! Route::is('app_about'))
+                &middot; <a href="{{ route('app_about') }}">about me</a>
+                @endif
             </p>
         </footer>
     </body>
