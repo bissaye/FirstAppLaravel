@@ -1,23 +1,16 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts/Base')
 
-        <title>About | First app in laravel</title>
-    </head>
-    <body>
-        <h3>
-            Build with &hearts; by me FRANCK BISSAYE <br>
-            An eternal code lover
-        </h3>
-        <p>
-            <a href="/">return to home</a>
-        </p>
-        <footer>
-            <p>
-                &copy; Copiright {{ date('Y') }} &middot;
-            </p>
-        </footer>
-    </body>
-</html>
+@section('title')
+About
+@endsection
+
+@section('content')
+<h3>
+    Build with &hearts; by me FRANCK BISSAYE <br>
+    An eternal code lover
+</h3>
+<p>
+    <a href="/">return to home</a>
+</p>
+@endsection
+
